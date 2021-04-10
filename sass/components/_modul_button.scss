@@ -1,0 +1,87 @@
+.button {
+  display: block;
+  min-width: 136px;
+  padding: 10px 32px;
+  margin: auto;
+
+  font-family: var(--main-font);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.18;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: none;
+  color: var(--main-bgc);
+  background-color: var(--focus-color);
+}
+
+.invite-btn {
+  min-width: 136px;
+  padding: 10px 29px;
+  padding-right: 62px;
+  margin: auto;
+
+  font-family: var(--main-font);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: none;
+  color: var(--main-bgc);
+  background-color: var(--focus-color);
+
+  &__icon {
+    position: absolute;
+    bottom: 0;
+    right: 28px;
+    transform: translateY(-50%);
+  }
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  &__nav:not(:last-child) {
+    margin-right: 8px;
+    display: block;
+  }
+
+  &__modul {
+    padding: 6px 12px;
+    border-radius: 4px;
+
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--title-text-color);
+    background: var(--team-selection-bgc);
+    border: none;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      color: var(--main-bgc);
+      background-color: var(--focus-color);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      border-radius: 4px;
+    }
+  }
+}
