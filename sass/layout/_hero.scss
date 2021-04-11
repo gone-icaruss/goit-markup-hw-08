@@ -1,27 +1,57 @@
 .hero {
   max-width: 480px;
   height: auto;
-  background-image: url("./img/mobile/hero/hero-img1.jpg");
+  background-image: url("./img/bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-@media (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .hero {
-    background-image: url("./img/mobile/hero/hero-img@2x.jpg");
-  }
-}
+// @media (min-device-pixel-ratio: 2),
+//   screen and (min-resolution: 192dpi),
+//   screen and (min-resolution: 2dppx) {
+//   .hero {
+//     background-image: url("./img/mobile/hero/hero-img@2x.jpg");
+//   }
+// }
 
-@media (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .hero {
-    background-image: url("./img/mobile/hero/hero-img1.jpg");
-  }
-}
+// @media (min-device-pixel-ratio: 2),
+//   screen and (min-resolution: 192dpi),
+//   screen and (min-resolution: 2dppx) {
+//   .hero {
+//     background-image: url("./img/mobile/hero/hero-img1.jpg");
+//   }
+// }
+// @media (min-device-pixel-ratio: 2),
+//   screen and (min-resolution: 192dpi),
+//   screen and (min-resolution: 2dppx) {
+//   .hero {
+//     background-image: url("./img/tablet/hero/hero-img@2x.jpg");
+//   }
+// }
+
+// @media (min-device-pixel-ratio: 2),
+//   screen and (min-resolution: 192dpi),
+//   screen and (min-resolution: 2dppx) {
+//   .hero {
+//     background-image: url("./img/tablet/hero/hero-img1.jpg");
+//   }
+// }
+// @media (min-device-pixel-ratio: 2),
+//   screen and (min-resolution: 192dpi),
+//   screen and (min-resolution: 2dppx) {
+//   .hero {
+//     background-image: url("./img/desktop/hero/hero-img@2x.jpg");
+//   }
+// }
+
+// @media (min-device-pixel-ratio: 2),
+//   screen and (min-resolution: 192dpi),
+//   screen and (min-resolution: 2dppx) {
+//   .hero {
+//     background-image: url("./img/desktop/hero/hero-img1.jpg");
+//   }
+// }
 
 // .hero {
 //   background: var(--footer-bgc);
@@ -33,7 +63,7 @@
 //       rgba(47, 48, 58, 0.4),
 //       rgba(47, 48, 58, 0.4)
 //     ),
-// url('../img/bg.jpg');
+//     url("../img/bg.jpg");
 //   background-repeat: no-repeat;
 //   background-position: center;
 //   background-size: cover;

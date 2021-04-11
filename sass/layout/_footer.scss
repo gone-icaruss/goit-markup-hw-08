@@ -2,21 +2,21 @@
   background: var(--footer-bgc);
   padding-top: 60px;
   padding-bottom: 60px;
-}
+  width: 480px;
 
-.adres-container {
-  margin-right: 70px;
-}
+  .logo {
+    margin: 0;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
 
-.adress {
-  margin-top: 20px;
-  width: 231px;
-  height: 81px;
+    justify-content: center;
+  }
 }
 
 .contact-list {
-  width: 231px;
-  height: 81px;
+  text-align: center;
+  margin-bottom: 60px;
 
   &__item .map {
     font-family: var(--main-font);
@@ -25,6 +25,7 @@
     letter-spacing: 0.03em;
     color: var(--main-bgc);
   }
+
   &__item:not(:last-child) {
     margin-bottom: 9px;
   }
@@ -35,24 +36,21 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-      color: var(--focus-color);
-    }
   }
 }
 
 .invite {
-  width: 206px;
+  margin-bottom: 60px;
+
+  &__title {
+    justify-content: center;
+  }
 }
 
 .soc-list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 
   &__link {
     display: flex;
@@ -63,32 +61,22 @@
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
     fill: var(--main-bgc);
-
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-      background-color: var(--focus-color);
-    }
   }
 
   &__icon {
     width: 20px;
     height: 20px;
   }
-}
 
-.follow {
-  margin-left: auto;
-}
-
-.invite-form {
-  display: block;
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .invite-form-input {
   height: 50px;
-  width: 358px;
+  width: 450px;
+  margin-bottom: 20px;
   margin-right: 12px;
   padding-left: 16px;
   outline: none;
@@ -104,12 +92,126 @@
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
   }
-
-  &:focus {
-    border-color: var(--focus-color);
-  }
 }
 
-.label-wrapper {
-  position: relative;
+.invite-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+// .footer {
+//   background: var(--footer-bgc);
+//   padding-top: 60px;
+//   padding-bottom: 60px;
+// }
+
+// .adres-container {
+//   margin-right: 70px;
+// }
+
+// .adress {
+//   margin-top: 20px;
+//   width: 231px;
+//   height: 81px;
+// }
+
+// .contact-list {
+//   width: 231px;
+//   height: 81px;
+
+//   &__item .map {
+//     font-family: var(--main-font);
+//     font-weight: 400;
+//     line-height: 1.71;
+//     letter-spacing: 0.03em;
+//     color: var(--main-bgc);
+//   }
+//   &__item:not(:last-child) {
+//     margin-bottom: 9px;
+//   }
+
+//   &__link {
+//     font-family: var(--main-font);
+//     font-weight: 400;
+//     line-height: 1.71;
+//     letter-spacing: 0.03em;
+//     color: rgba(255, 255, 255, 0.6);
+
+//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//     &:hover,
+//     &:focus {
+//       color: var(--focus-color);
+//     }
+//   }
+// }
+
+// .invite {
+//   width: 206px;
+// }
+
+// .soc-list {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+
+//   &__link {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 44px;
+//     height: 44px;
+//     border-radius: 50%;
+//     background: rgba(255, 255, 255, 0.1);
+//     fill: var(--main-bgc);
+
+//     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//     &:hover,
+//     &:focus {
+//       background-color: var(--focus-color);
+//     }
+//   }
+
+//   &__icon {
+//     width: 20px;
+//     height: 20px;
+//   }
+// }
+
+// .follow {
+//   margin-left: auto;
+// }
+
+// .invite-form {
+//   display: block;
+// }
+
+// .invite-form-input {
+//   height: 50px;
+//   width: 358px;
+//   margin-right: 12px;
+//   padding-left: 16px;
+//   outline: none;
+//   border: 1px solid rgba(255, 255, 255, 0.3);
+//   box-sizing: border-box;
+//   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//   border-radius: 4px;
+//   background-color: var(--footer-bgc);
+//   color: var(--main-bgc);
+
+//   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//   &::placeholder {
+//     color: rgba(255, 255, 255, 0.6);
+//   }
+
+//   &:focus {
+//     border-color: var(--focus-color);
+//   }
+// }
+
+// .label-wrapper {
+//   position: relative;
+// }
