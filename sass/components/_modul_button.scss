@@ -21,7 +21,6 @@
 .invite-btn {
   min-width: 136px;
   padding: 10px 29px;
-  padding-right: 62px;
   margin: auto;
 
   font-family: var(--main-font);
@@ -38,10 +37,13 @@
   background-color: var(--focus-color);
 
   &__icon {
-    position: absolute;
-    bottom: 0;
-    right: 28px;
-    transform: translateY(-50%);
+    @media screen and (min-width: 1200px) {
+      position: absolute;
+      bottom: 0;
+      right: 28px;
+      transform: translateY(-50%);
+    }
+    margin-left: 10px;
   }
 }
 

@@ -10,21 +10,21 @@
   }
 }
 
-// @media screen and (min-width: 480px) {
-//   .contaier {
-//     max-width: 480px;
-//     margin: 0 auto;
-//   }
-// }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
 
 @media screen and (min-width: 768px) {
-  .contaier {
+  .container {
     width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .contaier {
+  .container {
     width: 1200px;
   }
 }
