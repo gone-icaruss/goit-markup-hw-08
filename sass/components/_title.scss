@@ -8,6 +8,11 @@
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--main-bgc);
+
+  @media (max-width: 1199px) {
+    font-size: 26px;
+    line-height: 1.62;
+  }
 }
 
 .second-title {
