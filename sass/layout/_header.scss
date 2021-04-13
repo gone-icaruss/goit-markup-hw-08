@@ -28,6 +28,9 @@
   }
 
   .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
@@ -67,10 +70,6 @@
       font-size: 40px;
       line-height: 1.17;
       text-align: left;
-    }
-
-    &__list {
-      margin-bottom: 302px;
     }
 
     &__link {
@@ -166,6 +165,11 @@
       font-size: 14px;
       line-height: 1.14;
       color: var(--title-text-color);
+
+      &__link:hover,
+      &__link:focus {
+        color: var(--focus-color);
+      }
     }
 
     &__item:not(:last-child) {
@@ -173,21 +177,17 @@
     }
   }
 
-  & .current {
-    color: var(--focus-color);
+  .current::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: var(--focus-color);
+    display: block;
   }
-}
-
-.current::after {
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: 0;
-  height: 4px;
-  width: 100%;
-  border-radius: 2px;
-  background-color: var(--focus-color);
-  display: block;
 }
 
 .contact-nav {

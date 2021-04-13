@@ -414,10 +414,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .invite-btn__icon {
-    position: absolute;
     bottom: 0;
     right: 28px;
-    transform: translateY(-50%);
   }
 }
 
@@ -499,6 +497,9 @@ img {
     height: 40px;
   }
   .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
@@ -531,9 +532,6 @@ img {
     font-size: 40px;
     line-height: 1.17;
     text-align: left;
-  }
-  .mobile-menu__list {
-    margin-bottom: 302px;
   }
   .mobile-menu__link {
     color: var(--title-text-color);
@@ -615,24 +613,23 @@ img {
     line-height: 1.14;
     color: var(--title-text-color);
   }
+  .site-nav__link__link:hover, .site-nav__link__link:focus {
+    color: var(--focus-color);
+  }
   .site-nav__item:not(:last-child) {
     margin-right: 50px;
   }
-  .current {
-    color: var(--focus-color);
+  .current::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: var(--focus-color);
+    display: block;
   }
-}
-
-.current::after {
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: 0;
-  height: 4px;
-  width: 100%;
-  border-radius: 2px;
-  background-color: var(--focus-color);
-  display: block;
 }
 
 .contact-nav__link {
