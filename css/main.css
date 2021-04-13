@@ -1130,20 +1130,8 @@ img {
 
 .footer {
   background: var(--footer-bgc);
-}
-
-@media screen and (max-width: 1199px) {
-  .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .footer {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer .logo {
@@ -1156,7 +1144,12 @@ img {
 
 .contact-list {
   text-align: center;
-  margin-bottom: 60px;
+}
+
+@media (max-width: 1199px) {
+  .contact-list {
+    margin-bottom: 60px;
+  }
 }
 
 .contact-list__item .map {

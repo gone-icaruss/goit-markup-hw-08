@@ -1,13 +1,8 @@
 .footer {
   background: var(--footer-bgc);
-  @media screen and (max-width: 1199px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
+
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   .logo {
     margin: 0;
@@ -20,7 +15,9 @@
 
 .contact-list {
   text-align: center;
-  margin-bottom: 60px;
+  @media (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
 
   &__item .map {
     font-family: var(--main-font);
