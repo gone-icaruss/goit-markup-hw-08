@@ -1,5 +1,7 @@
-.current {
-  color: var(--focus-color);
+.header {
+  .current {
+    color: var(--focus-color);
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -166,10 +168,12 @@
       line-height: 1.14;
       color: var(--title-text-color);
 
-      &__link:hover,
-      &__link:focus {
-        color: var(--focus-color);
-      }
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__link:hover,
+    &__link:focus {
+      color: var(--focus-color);
     }
 
     &__item:not(:last-child) {
