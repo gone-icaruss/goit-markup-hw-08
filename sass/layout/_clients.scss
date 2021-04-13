@@ -1,6 +1,12 @@
 .clients {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients-list {
@@ -70,6 +76,20 @@
   &__icon6 {
     width: 88px;
     height: 45px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list {
+    &__item {
+      flex-basis: calc(100% / 3 - 30px);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    flex-wrap: nowrap;
   }
 }
 

@@ -1,14 +1,19 @@
 .footer {
   background: var(--footer-bgc);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   .logo {
     margin: 0;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
-
     justify-content: center;
   }
 }
@@ -39,7 +44,9 @@
 }
 
 .invite {
-  margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 
   &__title {
     justify-content: center;
@@ -99,6 +106,79 @@
   justify-content: center;
 }
 
+@media screen and (min-width: 768px) {
+  .footer {
+    .logo {
+      margin-left: 120px;
+      justify-content: left;
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    .footer-info {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .adress {
+    width: 232px;
+    margin-left: 76px;
+  }
+
+  .invite {
+    @media screen and (max-width: 1199px) {
+      margin-right: 89px;
+    }
+  }
+
+  .invite-wrapper {
+    width: 450px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    & .container {
+      display: flex;
+    }
+  }
+  .footer-info {
+    display: flex;
+  }
+
+  .contact-list {
+    &__link {
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        color: var(--focus-color);
+      }
+    }
+  }
+
+  .invite {
+    margin-left: 70px;
+  }
+
+  .soc-list {
+    &__link {
+      color: currentColor;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        background-color: var(--focus-color);
+      }
+    }
+  }
+
+  .follow {
+    margin-left: auto;
+  }
+}
 // .footer {
 //   background: var(--footer-bgc);
 //   padding-top: 60px;
