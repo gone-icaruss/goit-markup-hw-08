@@ -116,6 +116,12 @@ img {
   padding: 40px;
 }
 
+@media (max-width: 480px) {
+  .modal {
+    width: 100%;
+  }
+}
+
 .modal-close-btn {
   position: absolute;
   display: flex;
