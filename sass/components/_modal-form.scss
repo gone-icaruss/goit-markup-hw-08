@@ -74,7 +74,12 @@
 }
 
 .modal-form-check-desc {
-  display: flex;
+  @media (max-width: 767px) {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
+
   align-items: center;
   justify-content: center;
 
@@ -82,11 +87,14 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-
   margin-bottom: 30px;
 
+  @media (min-width: 768px) {
+    display: flex;
+  }
+
   &::before {
-    content: '';
+    content: "";
     display: block;
     outline: none;
     margin-right: 8px;

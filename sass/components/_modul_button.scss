@@ -19,7 +19,6 @@
 }
 
 .invite-btn {
-  min-width: 136px;
   padding: 10px 29px;
   margin: auto;
 
@@ -35,6 +34,10 @@
   border: none;
   color: var(--main-bgc);
   background-color: var(--focus-color);
+
+  @media (max-width: 1199px) {
+    min-width: 136px;
+  }
 
   &__icon {
     @media screen and (min-width: 1200px) {

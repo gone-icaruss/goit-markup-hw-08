@@ -222,7 +222,6 @@ img {
 }
 
 .modal-form-check-desc {
-  display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--main-font);
@@ -232,8 +231,22 @@ img {
   margin-bottom: 30px;
 }
 
+@media (max-width: 767px) {
+  .modal-form-check-desc {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal-form-check-desc {
+    display: flex;
+  }
+}
+
 .modal-form-check-desc::before {
-  content: '';
+  content: "";
   display: block;
   outline: none;
   margin-right: 8px;
@@ -391,7 +404,6 @@ img {
 }
 
 .invite-btn {
-  min-width: 136px;
   padding: 10px 29px;
   margin: auto;
   font-family: var(--main-font);
@@ -406,6 +418,12 @@ img {
   border: none;
   color: var(--main-bgc);
   background-color: var(--focus-color);
+}
+
+@media (max-width: 1199px) {
+  .invite-btn {
+    min-width: 136px;
+  }
 }
 
 .invite-btn__icon {
@@ -501,10 +519,11 @@ img {
     flex-direction: column;
     justify-content: space-between;
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100vw;
-    max-width: 480px;
+    width: 100%;
     height: 100vh;
     padding: 48px 40px;
     background-color: var(--main-bgc);
@@ -559,13 +578,15 @@ img {
   }
   .social {
     display: flex;
+    flex-wrap: wrap;
     max-width: 767vw;
   }
   .social__link {
     font-family: var(--main-font);
     font-weight: 500;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
     color: var(--focus-color);
   }
   .social__item:not(:last-child)::after {
@@ -1135,20 +1156,28 @@ img {
   padding-bottom: 60px;
 }
 
+@media (min-width: 1200) {
+  .footer .container {
+    align-items: baseline;
+  }
+}
+
 .footer .logo {
   margin: 0;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
-.contact-list {
-  text-align: center;
+@media (max-width: 1199px) {
+  .footer .logo {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 1199px) {
   .contact-list {
+    text-align: center;
     margin-bottom: 60px;
   }
 }
@@ -1179,8 +1208,10 @@ img {
   }
 }
 
-.invite__title {
-  justify-content: center;
+@media (max-width: 1199px) {
+  .invite__title {
+    justify-content: center;
+  }
 }
 
 .soc-list {
@@ -1212,7 +1243,6 @@ img {
 .invite-form-input {
   height: 50px;
   width: 100%;
-  margin-bottom: 20px;
   margin-right: 12px;
   padding-left: 16px;
   outline: none;
@@ -1229,13 +1259,25 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media (max-width: 1199px) {
+  .invite-form-input {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .invite-form-input {
+    width: 358px;
+  }
+}
+
 .invite-btn {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer .logo {
     margin-left: 120px;
     justify-content: left;
@@ -1249,7 +1291,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .adress {
     width: 232px;
     margin-left: 76px;
@@ -1264,17 +1306,24 @@ img {
 
 @media screen and (min-width: 768px) {
   .invite-wrapper {
-    width: 450px;
     margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .invite-wrapper {
+    width: 450px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer .container {
     display: flex;
+    align-items: baseline;
   }
   .footer-info {
     display: flex;
+    align-items: baseline;
   }
   .contact-list__link {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1294,6 +1343,9 @@ img {
   }
   .follow {
     margin-left: auto;
+  }
+  .label-wrapper {
+    display: flex;
   }
 }
 
@@ -1344,6 +1396,10 @@ img {
 .portfolio__wrapper {
   position: relative;
   overflow: hidden;
+}
+
+.portfolio__photo {
+  width: 100%;
 }
 
 .overlay {

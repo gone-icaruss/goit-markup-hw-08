@@ -34,10 +34,11 @@
     flex-direction: column;
     justify-content: space-between;
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100vw;
-    max-width: 480px;
+    width: 100%;
     height: 100vh;
     padding: 48px 40px;
     background-color: var(--main-bgc);
@@ -107,13 +108,15 @@
 
   .social {
     display: flex;
+    flex-wrap: wrap;
     max-width: 767vw;
 
     &__link {
       font-family: var(--main-font);
       font-weight: 500;
       font-size: 18px;
-      line-height: 22px;
+      line-height: 1.22;
+      letter-spacing: 0.02em;
       color: var(--focus-color);
     }
 
