@@ -82,13 +82,13 @@
   .portfolio {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
     margin-top: -30px;
+    margin-left: -30px;
 
     &__nav {
       display: flex;
-      margin-right: 30px;
-      padding-top: 30px;
+      margin-top: 30px;
+      margin-left: 30px;
       flex-basis: calc(100% / 2 - 30px);
     }
 

@@ -236,6 +236,8 @@ img {
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.03em;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -552,6 +554,9 @@ img {
     line-height: 1.17;
     text-align: left;
   }
+  .mobile-menu__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
   .mobile-menu__link {
     color: var(--title-text-color);
   }
@@ -560,6 +565,9 @@ img {
   }
   .mobile-contact {
     margin-bottom: 64px;
+  }
+  .mobile-contact__item:not(:last-child) {
+    margin-bottom: 32px;
   }
   .mobile-contact__link-tel {
     font-family: var(--main-font);
@@ -1428,13 +1436,13 @@ img {
   .portfolio {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
     margin-top: -30px;
+    margin-left: -30px;
   }
   .portfolio__nav {
     display: flex;
-    margin-right: 30px;
-    padding-top: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
     flex-basis: calc(100% / 2 - 30px);
   }
   .portfolio__block {

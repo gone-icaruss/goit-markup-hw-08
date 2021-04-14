@@ -73,6 +73,9 @@
       font-size: 40px;
       line-height: 1.17;
       text-align: left;
+      &:not(:last-child) {
+        margin-bottom: 32px;
+      }
     }
 
     &__link {
@@ -87,6 +90,12 @@
 
   .mobile-contact {
     margin-bottom: 64px;
+
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 32px;
+      }
+    }
 
     &__link-tel {
       font-family: var(--main-font);
