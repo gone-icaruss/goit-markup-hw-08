@@ -8,6 +8,9 @@
     padding-bottom: 200px;
   }
 
+  width: 479px;
+  margin: auto;
+
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -34,6 +37,8 @@
 
 @media (min-width: 768px) {
   .hero {
+    width: 767px;
+    margin: auto;
     &__theme {
       padding-right: 204px;
       padding-left: 204px;

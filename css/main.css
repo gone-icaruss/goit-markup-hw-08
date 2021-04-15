@@ -743,6 +743,8 @@ img {
 }
 
 .hero {
+  width: 479px;
+  margin: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/mobile/hero/hero-img1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -771,6 +773,8 @@ img {
 
 @media (min-width: 768px) {
   .hero {
+    width: 767px;
+    margin: auto;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/tablet/hero/hero-img1.jpg");
   }
   .hero__theme {
@@ -901,8 +905,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .work-img {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 94px;
   }
   .work-list {
     display: flex;
