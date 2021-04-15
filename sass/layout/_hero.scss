@@ -38,7 +38,7 @@
 @media (min-width: 768px) {
   .hero {
     width: 767px;
-    margin: auto;
+
     &__theme {
       padding-right: 204px;
       padding-left: 204px;
@@ -67,6 +67,7 @@
 
 @media (min-width: 1200px) {
   .hero {
+    width: 1600px;
     &__theme {
       padding-right: 250px;
       padding-left: 250px;
