@@ -8,9 +8,6 @@
     padding-bottom: 200px;
   }
 
-  width: 479px;
-  margin: auto;
-
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -35,14 +32,8 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 481px) {
   .hero {
-    width: 767px;
-
-    &__theme {
-      padding-right: 204px;
-      padding-left: 204px;
-    }
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -65,12 +56,12 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 769px) {
   .hero {
-    width: 1600px;
+    max-width: 1600px;
     &__theme {
-      padding-right: 250px;
-      padding-left: 250px;
+      padding-right: 204px;
+      padding-left: 204px;
     }
     background-image: linear-gradient(
         to right,
